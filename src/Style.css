@@ -1,0 +1,54 @@
+.App {
+    font-family: sans-serif;
+    padding: 40px;
+    width:100%
+  }
+  .card {
+    padding: 60px;
+    box-shadow: lightgray 0px 0px 3px 3px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .date {
+    color: gray;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .title {
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .description {
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 40px;
+  }
+  .button {
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    width: 140px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(255, 145, 0), red);
+    font-weight:700;
+    font-size:16px;
+    box-shadow: 5px 5px 10px rgba(233, 14, 14, 0.3);
+  }
+  .image{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  border:5px solid orange;
+  margin-bottom: 20px;
+  }
+  

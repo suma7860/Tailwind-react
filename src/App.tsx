@@ -1,18 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './Style.css';
+import { DrawerContextProvider } from './context/DrawerContextProvider';
+import DrawerComponent from './components/DrawerComponent';
+import Card from './components/Card';
 
-function App() {
+const App = () => {
+  const drawerContextValues = {
+    direction: 'left' as any ,
+    animation: 'slide' as any,
+    speed: 300 as number,
+  };
+
   return (
-    <div className="App">
-<div className="py-24 flex items-center justify-center bg-green-500 space-x-8">
-   <div className="w-36 h-36 bg-red-600 rounded-full"></div>
-   <div className="w-24 h-24 bg-red-500 rounded-full"></div>
-   <div className="w-12 h-12 bg-red-400 rounded-full"></div>
-</div>
-    </div>
+    <DrawerContextProvider contextValues={drawerContextValues}>
+      <DrawerComponent
+      >
+        {/* <h1> heading</h1> */}
+        <Card/>
+      </DrawerComponent>
+    </DrawerContextProvider>
   );
-}
-
+};
 export default App;
- 
