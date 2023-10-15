@@ -8,9 +8,9 @@ import Card from './components/Card';
 
 const App = () => {
   const drawerContextValues = {
-    direction: 'left' as any ,
-    animation: 'slide' as any,
-    speed: 300 as number,
+    direction: 'left' as any,
+    animation: 'ease-out'as any ,
+    speed: "0.3s"  as any,
   };
 
   return (

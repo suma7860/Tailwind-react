@@ -2,14 +2,14 @@ import React, { createContext } from 'react';
 
 interface DrawerContextProps {
   direction: 'left' | 'right' | 'top' | 'bottom';
-  animation: 'slide' | 'none';
-  speed: number;
+  animation: 'ease-out' | 'none'| string
+  speed: number | string;
 }
 
 const defaultContextValues: DrawerContextProps = {
   direction: 'left',
-  animation: 'slide',
-  speed: 300,
+  animation: 'ease-out',
+  speed: '0.5s',
 };
 
 export const DrawerContext = createContext<DrawerContextProps>(defaultContextValues);

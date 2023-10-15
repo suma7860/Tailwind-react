@@ -1,16 +1,15 @@
 import React, { ReactNode } from 'react';
 import { DrawerContext } from './DrawerContext';
 
-
-
 interface DrawerContextProps {
-  direction: 'left' | 'right' | 'top' | 'bottom' ;
-  animation: 'slide' | 'none';
-  speed: number;
+  direction: 'left' | 'right' | 'top' | 'bottom';
+  animation: 'ease-out' | 'none';
+  speed: number|string;
 }
+
 interface DrawerContextProviderProps {
   children: ReactNode;
-  contextValues: DrawerContextProps; // Pass the context values as a prop
+  contextValues: DrawerContextProps | any;
 }
 
 export const DrawerContextProvider: React.FC<DrawerContextProviderProps> = ({ children, contextValues }) => {
